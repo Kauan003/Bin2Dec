@@ -1,85 +1,155 @@
+@import url('https://fonts.googleapis.com/css2? family= Nunito:ital,wght@1.300 & display=swap');
 *
 {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+   
 }
-
 section
 {
-    width: 100%;
-    min-height: 100vh;
+    height: 80vh;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    justify-content:start ;
     display: flex;
-    background-color: rgb(24, 24, 24);
 }
-h1
-{
-    font-size: 200%;
-    position: absolute;
-    width: 100%;
-    color: white;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-}
-.Text p
-{   
-    top: 25%;
-    position: absolute;
+.Container
+{
+    background-color: rgb(20, 34, 31);
+    margin: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width:800px;
+    height: 500px; 
+    box-shadow: 0 10px 15px 15px rgb(0,0,0,0.25);
+    border-radius: 10px;
     color: white;
-    
-}
+}    
+
 button
-{
-    position: absolute;
+{ 
+    cursor: pointer;
+    background:none ;
+    border: none;
+    color: white;
+    width: 30%;
     height: 50px;
-    top: 55%;
-    width: 100px;
-    height: 30px;
-    left: 20%;
-
-    
-    
+    font-size: 1.2em;
+    border-radius: 3px;
+}
+button:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 99, 99);
 }
 input
 {
-    position: absolute;
-    width: 60%;
-    height: 20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.Text
-{
-    position: absolute;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    color: white;
-    top: 55%;
-    right: 25%;
-    width: 200px;
+    width:60%;
     height: 30px;
-    border: 1px solid white;
-    
-
-    
-}
-.Container
-{
+    font-size: 1.3rem;
     color: green;
-    background-color: black;
-    display: grid;
-    align-items: center;
+}
+.Result
+{
     text-align: center;
-    justify-content: center;
-    position: relative;
+    color: green;
+    font-size: 1.2rem;
+    width:60%;
+    padding: 10px;
     border: 1px solid white;
-    border-radius: 5px;
-    width: 650px;
-    height: 500px;
+    border-radius:5px ;
+}
+img{
+ 
+    margin: 50px;
+    width: 180px;
+    height: 180px;
+    transform: translate(-100px,-100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}   
+.texto
+{
+    margin-top: 100px;
+    width: 500px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color:rgb(65, 65, 65) ;
+}
+.texto h1
+{
+    font-weight: 300;
+}
+footer
+{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(20, 34, 31);
+}
+
+@media (max-width: 1190px){
+    section{
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-content:center;
+    }
+    footer{
+        display: none;
+    }
+    .Container{
+        width:600px;
+        height: 350px;
+        font-size: 1em;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+    }
+    .texto{
+        margin-left: 150px;
+        align-items: center;
+        justify-content:center;
+    }
+}
+@media (max-width: 700px){
+    .Container{
+        width: 80%;
+        height: 300px;
+        font-size: 0.5em;
+      
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .texto{
+        margin: 100px;
+        font-size: 0.8em;
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 500px){
+    .Container{
+        width: 300px;
+        height: 200px;
+        font-size: 0.5em;
     
-}    
+    }
+    img{
+      display: none;
+    }
+    .texto{
+        margin: 100px;
+        font-size: 0.5em;
+        width: 260px;
+    }
+}

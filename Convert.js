@@ -1,5 +1,5 @@
 let binary = document.querySelector('input')
-var conv = document.querySelector('p')
+var conv = document.querySelector('.Result')
 
 function ConvertToDecimal()
 {   
@@ -8,7 +8,7 @@ function ConvertToDecimal()
             return element > 1
         })
     
-    if(digit_filtrado[0] > 1 ){
+    if(digit_filtrado[0] > 1 || binary.value === String()){
         conv.innerHTML = "Não é um numero binario!"
     }
     else {
